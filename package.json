@@ -1,7 +1,7 @@
 {
-  "name": "Aniruddha Mysore's website",
+  "name": "animysore-website",
   "private": true,
-  "description": "My website",
+  "description": "Aniruddha Mysore's website",
   "version": "0.1.0",
   "author": "Aniruddha Mysore <aniruddha.mysore@gmail.com>",
   "dependencies": {
