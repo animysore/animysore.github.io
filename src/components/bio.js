@@ -17,7 +17,10 @@ function Bio() {
       render={data => {
         const { author/* , social */, description } = data.site.siteMetadata
         return (
-          <div> 
+          <div style={{
+            marginTop: rhythm(5),
+            marginBottom: rhythm(10),
+          }}> 
             <p>
               <h1 style={{
                 fontSize: rhythm(2),
@@ -28,7 +31,6 @@ function Bio() {
             <div
               style={{
                 display: `flex`,
-                marginBottom: rhythm(2.5),
               }}
             >
             <Social />
