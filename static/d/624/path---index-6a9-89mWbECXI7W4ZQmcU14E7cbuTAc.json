@@ -1,0 +1,1 @@
+{"errors":[{"message":"Field \"image\" of type \"File\" must have a selection of subfields. Did you mean \"image { ... }\"?","locations":[{"line":29,"column":11}]}],"pageContext":{"isCreatedByStatefulCreatePages":true}}
