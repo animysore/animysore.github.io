@@ -31,7 +31,7 @@ class Home extends React.Component {
                 }}
               >
               </h3>
-              <p
+              <div
                 dangerouslySetInnerHTML={{
                   __html: node.html,
                 }}
@@ -53,7 +53,7 @@ class Home extends React.Component {
                     }}
                   > {node.frontmatter.title}
                   </h3>
-                  <p
+                  <div
                     dangerouslySetInnerHTML={{
                       __html: node.html,
                     }}
