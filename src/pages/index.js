@@ -18,8 +18,8 @@ class Home extends React.Component {
     return (
       <Layout location={this.props.location}>
         <SEO
-          title="All posts"
-          keywords={[`blog`, `gatsby`, `javascript`, `react`]}
+          title="Aniruddha Mysore's Website"
+          keywords={[`aniruddha`, `mysore`, `blog`, `bangalore`, `pesit`, `pesu`, `pes`, `stride`, `gsoc`]}
         />
         <Bio />
         {portfolio.map(({ node }) => {

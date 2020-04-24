@@ -20,7 +20,9 @@ class Layout extends React.Component {
           <div className='column is-8'>
               <main>{children}</main>
               <footer>
-                © {new Date().getFullYear()} Aniruddha Mysore
+                  © {new Date().getFullYear()} Aniruddha Mysore.
+                 Built with <span role="image" aria-label="heart">❤️</span>. 
+                 
                 <br />
               </footer>
           </div>
