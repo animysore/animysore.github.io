@@ -16,4 +16,4 @@ Worked on Natural Language Question Answering during my internship at Stride.ai.
 
 ### Robotics
 
-My paper on robot exploration and simulation which presented [TRS Python](https://github.com/animysore/trs) was awarded Best Student Paper at SOFA'20.   
+My paper on robot exploration and simulation which presented [TRS Python](https://github.com/animysore/trs) was awarded "Best Student Paper" at SOFA'20.   
