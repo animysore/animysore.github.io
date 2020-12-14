@@ -12,8 +12,8 @@ I have worked on image segmentation. The paper describing my team's submission f
 
 ### NLP
 
-Extensive work on Natural Language Question Answering during my internship at Stride.ai.
+Worked on Natural Language Question Answering during my internship at Stride.ai.
 
-### Software Engineering
+### Robotics
 
-Currently working on analysing Software Engineering trends. 
+My paper on robot exploration and simulation which presented [TRS Python](https://github.com/animysore/trs) was awarded Best Student Paper at SOFA'20.   
