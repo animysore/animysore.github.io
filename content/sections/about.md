@@ -6,11 +6,11 @@ order: 4
 
 # About
 
-I am a final year undergrad student at PESIT Bangalore, majoring in Computer Science and Engineering.
+I work in the algorithmic-trading division of Morgan Stanley. I graduated from PESIT Bangalore in 2020 with a CS major.
 
-Currently, I am building a tool for freelance designers at [23ml](23ml.in) the company I co-founded with [Gautam Padiyar](https://twitter.com/padiyar_) and [Sameer Kolhar](https://twitter.com/kolhar730).
+Sometimes, I help build [Turtlewig](https://turtlewig.com) - a tool for freelance designers.
 
-My professional interests are in Software Development and Computer Science research.
+My professional interests are in Software Development and Computer Science research - I am deeply enamoured by the elegant engineering behind great softare products - they are works of art in their own right. 
 
 I occasionally contribute to Open Source projects. I was a [Google Summer of Code 2019 (GSOC)](https://summerofcode.withgoogle.com/archive/2019/projects/5915487278465024/) student with [Red Hen Labs](https://summerofcode.withgoogle.com/archive/2019/organizations/4781629350871040/).
 
