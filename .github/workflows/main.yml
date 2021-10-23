@@ -19,24 +19,26 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-          - name: Gatsby Publish
-            uses: enriikke/gatsby-gh-pages-action@v2.2.0
-            with:
-              # A personal access token needed to push your site after it has been built.
-              access-token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-              # The branch expected by GitHub to have the static files needed for your site.
-              deploy-branch: master
-              # The repo expected by GitHub to have the static files needed for your site.
-              deploy-repo: # optional, default is 
-              # Additional arguments that get passed to `gatsby build`.
-              gatsby-args: # optional, default is 
-              # Builds your Gatsby site but skips publishing by setting it to `true`. Helpful for testing/debugging Workflows.
-              skip-publish: # optional
-              # The directory where your Gatsby source files are at. `gatsby build` will run from this directory.
-              working-dir: # optional, default is .
-              # The commit message used for pushing changes to the deploy branch.
-              commit-message: # optional, default is 
-              # The name under which the deploy commit is pushed to the deploy branch.
-              git-config-name: # optional, default is 
-              # The email adress under which the deploy commit is pushed to the deploy branch.
-              git-config-email: # optional, default is 
+      - name: Checkout repo
+        uses: actions/checkout@v1
+      - name: Gatsby Publish
+        uses: enriikke/gatsby-gh-pages-action@v2.2.0
+        with:
+          # A personal access token needed to push your site after it has been built.
+          access-token: x-access-token:${{ secrets.GITHUB_TOKEN }}
+          # The branch expected by GitHub to have the static files needed for your site.
+          deploy-branch: master
+          # The repo expected by GitHub to have the static files needed for your site.
+          deploy-repo: # optional, default is 
+          # Additional arguments that get passed to `gatsby build`.
+          gatsby-args: # optional, default is 
+          # Builds your Gatsby site but skips publishing by setting it to `true`. Helpful for testing/debugging Workflows.
+          skip-publish: # optional
+          # The directory where your Gatsby source files are at. `gatsby build` will run from this directory.
+          working-dir: # optional, default is .
+          # The commit message used for pushing changes to the deploy branch.
+          commit-message: # optional, default is 
+          # The name under which the deploy commit is pushed to the deploy branch.
+          git-config-name: # optional, default is 
+          # The email adress under which the deploy commit is pushed to the deploy branch.
+          git-config-email: # optional, default is 
