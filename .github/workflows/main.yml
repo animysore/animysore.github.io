@@ -27,7 +27,7 @@ jobs:
               # The branch expected by GitHub to have the static files needed for your site.
               deploy-branch: master
               # The repo expected by GitHub to have the static files needed for your site.
-              deploy-repo: animysore.github.io 
+              deploy-repo: # optional, default is 
               # Additional arguments that get passed to `gatsby build`.
               gatsby-args: # optional, default is 
               # Builds your Gatsby site but skips publishing by setting it to `true`. Helpful for testing/debugging Workflows.
