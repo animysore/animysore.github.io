@@ -1,11 +1,11 @@
 
 import React from "react"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image";
 
 function ProjectCard(props) {
     return (
         <>
-            <Img fluid={props.image} />
+            <GatsbyImage image={props.image} />
         </>
     )
 }

@@ -57,23 +57,21 @@ function Bio() {
 
 const bioQuery = graphql`
   query BioQuery {
-    avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
-      childImageSharp {
-        fixed(width: 50, height: 50) {
-          ...GatsbyImageSharpFixed
-        }
-      }
+  avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
+    childImageSharp {
+      gatsbyImageData(width: 50, height: 50, layout: FIXED)
     }
-    site {
-      siteMetadata {
-        author
-        description
-        social {
-          twitter
-        }
+  }
+  site {
+    siteMetadata {
+      author
+      description
+      social {
+        twitter
       }
     }
   }
+}
 `
 
 export default Bio

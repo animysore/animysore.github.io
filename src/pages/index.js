@@ -42,7 +42,7 @@ class Home extends React.Component {
         <h1>Projects</h1> 
         <div className="columns">
           {projects.map(({ node }) => {
-            let image = node.frontmatter.image.childImageSharp.fluid;
+            let image = node.frontmatter.image.childImageSharp.gatsbyImageData;
             return (
                 <div key={node.frontmatter.title} className="column is-one-third">
                   <ProjectCard image={image}></ProjectCard>
@@ -63,7 +63,7 @@ class Home extends React.Component {
           })}
         </div>
       </Layout>
-    )
+    );
   }
 }
 
@@ -105,9 +105,7 @@ export const pageQuery = graphql`
             section
             image  {
               childImageSharp {
-                fluid(maxWidth: 800) {
-                  ...GatsbyImageSharpFluid
-                }
+                gatsbyImageData(width: 800, layout: CONSTRAINED)
               }
             }
           }
