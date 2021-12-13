@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `My Website`,
     author: `Aniruddha Mysore`,
-    description: `CSE Student, Scientist, I build products`,
+    description: `I work at Microsoft Research, where I am building tools to improve cloud reliability .`,
     siteUrl: `https://animysore.com/`,
     social: {
       twitter: `https://twitter.com/ani_mysore`,
