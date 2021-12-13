@@ -37,9 +37,10 @@ class Home extends React.Component {
             </div>
           )
         })}
+        {/*
         <h1>Projects</h1> 
         <div style={{ display: 'flex' }}>
-          {/* projects.map(({ node }) => {
+          {projects.map(({ node }) => {
             let image = node.frontmatter.image.childImageSharp.gatsbyImageData;
             return (
                 <div key={node.frontmatter.title} style={{ flex: 3, padding: 5 }}>
@@ -58,8 +59,9 @@ class Home extends React.Component {
                   />
                 </div>
             )
-          }) */}
+          })}
         </div>
+        */}
       </Layout>
     );
   }

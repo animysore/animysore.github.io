@@ -19,7 +19,7 @@ class Layout extends React.Component {
               <main>{children}</main>
               <footer>
                   © {new Date().getFullYear()} Aniruddha Mysore.
-                 Built with <span role="image" aria-label="heart">❤️</span>. 
+                 Built with ❤️. 
                  
                 <br />
               </footer>
