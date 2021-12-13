@@ -7,7 +7,8 @@ module.exports = {
     social: {
       twitter: `https://twitter.com/ani_mysore`,
       linkedin: `https://linkedin.com/in/animysore`,
-      github: `https://github.com/animysore`
+      github: `https://github.com/animysore`,
+      scholar: `https://scholar.google.com/citations?user=wVlafasAAAAJ&hl=en`,
     },
   },
   plugins: [
@@ -59,13 +60,6 @@ module.exports = {
       }
     },
     `gatsby-plugin-offline`,
-    `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography`,
-      },
-    },
-    `gatsby-plugin-sass`,
+    `gatsby-plugin-react-helmet`
   ],
 }

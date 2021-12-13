@@ -1,6 +1,5 @@
 import React from "react"
 
-import { rhythm } from "../utils/typography"
 import Sidebar from "./sidebar"
 
 class Layout extends React.Component {
@@ -11,13 +10,12 @@ class Layout extends React.Component {
         style={{
           marginLeft: `auto`,
           marginRight: `auto`,
-          maxWidth: rhythm(45),
-          padding: `${rhythm(1.5)} ${rhythm(2)}`
-          //paddingRight: rhythm(20)
+          maxWidth: '80rem',
+          padding: `1.5rem 2rem`
         }}
       >
-        <div className='columns'>
-          <div className='column is-8'>
+        <div style={{ display: 'flex' }}>
+          <div style={{ flex: 6 }}>
               <main>{children}</main>
               <footer>
                   © {new Date().getFullYear()} Aniruddha Mysore.
@@ -26,7 +24,7 @@ class Layout extends React.Component {
                 <br />
               </footer>
           </div>
-          <div className='column is-4'>
+          <div style={{ flex: 4 }}>
             <Sidebar />
           </div>
         </div>        

@@ -7,47 +7,24 @@
 
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
-import Social from "../components/social";
-import { rhythm } from "../utils/typography"
 
 function Bio() {
   return (
     <StaticQuery
       query={bioQuery}
       render={data => {
-        const { author/* , social */, description } = data.site.siteMetadata
+        const { author, description } = data.site.siteMetadata
         return (
           <div style={{
-            marginTop: rhythm(5),
-            marginBottom: rhythm(10),
+            marginTop: '5rem',
+            marginBottom: '2rem',
           }}> 
-            <p>
-              <h1 style={{
-                fontSize: rhythm(2),
-                fontFamily: `Quicksand, sans-serif`
-              }}> {author} </h1>
-              <h3> {description} </h3>
-            </p>
-            <div
-              style={{
-                display: `flex`,
-              }}
-            >
-            <Social />
-              {/* <Image
-                fixed={data.avatar.childImageSharp.fixed}
-                alt={author}
-                style={{
-                  marginRight: rhythm(1 / 2),
-                  marginBottom: 0,
-                  minWidth: 50,
-                  borderRadius: `100%`,
-                }}
-                imgStyle={{
-                  borderRadius: `50%`,
-                }}
-              /> */}
-            </div>
+            <h3 style={{ marginBottom: '0' }}> Hi there! I am </h3>
+            <h1 style={{
+              margin: 0,
+              fontSize: '4rem',
+            }}> {author} </h1>
+            <h3> {description} </h3>
           </div>
         )
       }}

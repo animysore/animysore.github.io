@@ -4,9 +4,7 @@ import { graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import ProjectCard from '../components/card' 
-import { rhythm } from "../utils/typography"
-import './../style.scss';
+import ProjectCard from '../components/card'
 
 class Home extends React.Component {
   render() {
@@ -19,7 +17,7 @@ class Home extends React.Component {
       <Layout location={this.props.location}>
         <SEO
           title="Aniruddha Mysore's Website"
-          keywords={[`aniruddha`, `mysore`, `blog`, `bangalore`, `pesit`, `pesu`, `pes`, `stride`, `gsoc`]}
+          keywords={[`aniruddha`, `mysore`, `microsoft research`, `morgan stanley`]}
         />
         <Bio />
         {portfolio.map(({ node }) => {
@@ -27,7 +25,7 @@ class Home extends React.Component {
             <div key={node.frontmatter.section}>
               <h3
                 style={{
-                  marginBottom: rhythm(1 / 4),
+                  marginBottom: '1rem',
                 }}
               >
               </h3>
@@ -40,16 +38,16 @@ class Home extends React.Component {
           )
         })}
         <h1>Projects</h1> 
-        <div className="columns">
-          {projects.map(({ node }) => {
+        <div style={{ display: 'flex' }}>
+          {/* projects.map(({ node }) => {
             let image = node.frontmatter.image.childImageSharp.gatsbyImageData;
             return (
-                <div key={node.frontmatter.title} className="column is-one-third">
+                <div key={node.frontmatter.title} style={{ flex: 3, padding: 5 }}>
                   <ProjectCard image={image}></ProjectCard>
 
                   <h3
                     style={{
-                      marginBottom: rhythm(1 / 4),
+                      marginBottom: '1rem',
                     }}
                   > {node.frontmatter.title}
                   </h3>
@@ -60,7 +58,7 @@ class Home extends React.Component {
                   />
                 </div>
             )
-          })}
+          }) */}
         </div>
       </Layout>
     );
@@ -77,7 +75,7 @@ export const pageQuery = graphql`
       }
     }
     portfolio: allMarkdownRemark (
-      sort: { fields: [frontmatter___order], order: DESC }
+      sort: { fields: [frontmatter___order], order: ASC }
       filter: {frontmatter: {type: {eq: "portfolio"}}}
       limit: 1000
     ){
