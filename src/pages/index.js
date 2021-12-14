@@ -4,14 +4,14 @@ import { graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import ProjectCard from '../components/card'
+// import ProjectCard from '../components/card'
 
 class Home extends React.Component {
   render() {
     const { data } = this.props
     
     const portfolio = data.portfolio.edges
-    const projects = data.projects.edges
+    // const projects = data.projects.edges
 
     return (
       <Layout location={this.props.location}>
