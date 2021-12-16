@@ -1,7 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 // import ProjectCard from '../components/card'
@@ -19,7 +18,6 @@ class Home extends React.Component {
           title="Aniruddha Mysore's Website"
           keywords={[`aniruddha`, `mysore`, `microsoft research`, `morgan stanley`]}
         />
-        <Bio />
         {portfolio.map(({ node }) => {
           return (
             <div key={node.frontmatter.section}>

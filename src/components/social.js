@@ -8,6 +8,7 @@ function Social({ twitter, linkedin, github, scholar }) {
   return (
     <div
       style={{
+        marginTop: '1rem',
         display: `flex`,
         fontSize: '1.5rem',
         justifyContent: 'space-between',
