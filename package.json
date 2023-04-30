@@ -6,7 +6,7 @@
   "author": "Aniruddha Mysore <aniruddha.mysore@gmail.com>",
   "dependencies": {
     "bootstrap": "^5.1.3",
-    "gatsby": "^4.3.0",
+    "gatsby": "^4.25.6",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-feed": "^4.3.0",
     "gatsby-plugin-google-gtag": "^4.3.0",
