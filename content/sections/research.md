@@ -30,6 +30,32 @@ I am a Research Fellow at MSR India. I am studying how methods like fuzzing, dyn
     <sub>Adish Rao, ***Aniruddha Mysore***, Abhishek Guragol, Rajath Shetty, Siddhanth Ajri, Poulami Sarkar, and Gowri Srinivasa 2021.</sub>
 
 4.  **Segmentation of key structures of the eye with two-step classifier**
-    [pdf](https://content.iospress.com/articlesjournal-of-intelligent-and-fuzzy-systems/ifs189858)  
-    <sub>_Journal of Intelligent & Fuzzy Systems (2021)_</sub>  
+    [pdf](https://content.iospress.com/articlesjournal-of-intelligent-and-fuzzy-systems/ifs189858)
+    <sub>_Journal of Intelligent & Fuzzy Systems (2021)_</sub>
     <sub>Adish Rao, ***Aniruddha Mysore***, Siddhanth Ajri, Abhishek Guragol, Poulami Sarkar, and Gowri Srinivasa.</sub>
+
+5.  **VChainSaw: Execution Partitioning for Scalable Temporal Memory Safety**
+    [pdf](https://animysore.com/publications/vchainsaw.pdf)
+    <sub>***Aniruddha Mysore*** et al.</sub>
+
+# Technical Reports & Course Projects 📚
+
+1.  **VIVEKFEST Submission**
+    [pdf](https://animysore.com/publications/VIVEKFEST_Submission.pdf)
+    <sub>_2024_</sub>
+
+2.  **DNS Security and Privacy Analysis**
+    [pdf](https://animysore.com/publications/CS8803-DNS-Report.pdf)
+    <sub>_CS8803 Course Project Report (2024)_</sub>
+
+3.  **Systems and Machine Learning**
+    [pdf](https://animysore.com/publications/CS8803-SysML-Report.pdf)
+    <sub>_CS8803 Course Project Report (2024)_</sub>
+
+4.  **Software Analysis and Testing**
+    [pdf](https://animysore.com/publications/CS8803-SAL.pdf)
+    <sub>_CS8803 Course Project Report (2024)_</sub>
+
+5.  **Software Analysis & Improvement**
+    [pdf](https://animysore.com/publications/CS6340_report.pdf)
+    <sub>_CS6340 Course Project Report (2024)_</sub>
