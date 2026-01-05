@@ -1,3 +1,6 @@
+import React from "react"
+import { HelmetProvider } from "react-helmet-async"
+
 // custom typefaces
 import "typeface-open-sans"
 import "typeface-quicksand"
@@ -6,3 +9,7 @@ import "typeface-quicksand"
 import "bootstrap/dist/css/bootstrap-reboot.min.css"
 import "bootstrap/dist/css/bootstrap-grid.min.css"
 import "./src/style.css"
+
+export const wrapRootElement = ({ element }) => (
+  <HelmetProvider>{element}</HelmetProvider>
+)
