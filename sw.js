@@ -27,26 +27,20 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-6200c8eead293a460c4a.js"
+    "url": "webpack-runtime-e3a73f16f6849ab5b025.js"
   },
   {
-    "url": "framework-a6b7088a067f23787e2a.js"
+    "url": "framework-b66472afeb864e90e1d6.js"
   },
   {
-    "url": "styles.1b718481b46fb3112323.css"
+    "url": "styles.cedd040624a85c9d4192.css"
   },
   {
-    "url": "app-904e288fbd240b560d5b.js"
+    "url": "app-480877d0fa97b51f6f4d.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "69c52507482a443146c7a42190927552"
-  },
-  {
-    "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-ccfce72f58669cf238ce.js"
-  },
-  {
-    "url": "polyfill-06230ad4204760600e64.js"
+    "revision": "774e9ab8bdd47b5d525643b6b2bc7df5"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
@@ -72,6 +66,24 @@ const MessageAPI = {
 
   clearPathResources: event => {
     event.waitUntil(idbKeyval.clear())
+
+    // We detected compilation hash mismatch
+    // we should clear runtime cache as data
+    // files might be out of sync and we should
+    // do fresh fetches for them
+    event.waitUntil(
+      caches.keys().then(function (keyList) {
+        return Promise.all(
+          keyList.map(function (key) {
+            if (key && key.includes(`runtime`)) {
+              return caches.delete(key)
+            }
+
+            return Promise.resolve()
+          })
+        )
+      })
+    )
   },
 
   enableOfflineShell: () => {
@@ -138,7 +150,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-904e288fbd240b560d5b.js`))) {
+  if (!resources || !(await caches.match(`/app-480877d0fa97b51f6f4d.js`))) {
     return await fetch(event.request)
   }
 
