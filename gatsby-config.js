@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `My Website`,
+    title: `Aniruddha Mysore`,
     author: `Aniruddha Mysore`,
-    description: `I work at Microsoft Research, where I am building tools to improve cloud reliability .`,
+    description: `Aniruddha Mysore`,
     siteUrl: `https://animysore.com/`,
     social: {
       twitter: `https://twitter.com/ani_mysore`,

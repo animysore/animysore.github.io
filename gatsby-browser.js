@@ -2,8 +2,8 @@ import React from "react"
 import { HelmetProvider } from "react-helmet-async"
 
 // custom typefaces
-import "typeface-open-sans"
-import "typeface-quicksand"
+import "@fontsource/open-sans"
+import "@fontsource/quicksand"
 
 // normalize css
 import "bootstrap/dist/css/bootstrap-reboot.min.css"
